@@ -1224,3 +1224,12 @@ cc_library(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "abc-lib-namespace",
+    defines = ["ABC_NAMESPACE=abc"],
+    deps = [
+        ":abc-lib",
+    ],
+    visibility = ["//visibility:public"],
+)
